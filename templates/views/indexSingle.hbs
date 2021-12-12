@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Стоимость металлов на конретную дату</title>
+        {{!-- <link rel="icon" href="/img/weather.png">
+        <link rel="stylesheet" href="/css/styles.css"> --}}
+    </head>
+    <body>
+        <div class="main-content">
+        <p>Используйте эту страницу для получения информации о стоимости металлов на конкретную дату</p>
+        {{>header}}
+            <form>
+                <p>Выберите металл:
+                <br>
+                <select>
+                    <option>Cu</option>
+                    <option>Al</option>
+                    <option>Sn</option>
+                    <option>Pb</option>
+                    <option>Zn</option>
+                    <option>Ni</option>
+                </select>
+                <br>
+                {{!-- <p>Choose date:
+                <input type="date">
+                <br> --}}
+                <p>Выберите дату:
+                <br>
+                <input type="date">
+                <br>
+                <button>Поиск</button>
+            </form>
+            <p id="message-1"></p>
+            <p id="message-2"></p>
+            <p id="message-3"></p>
+        </div>
+        {{>footer}}
+    <script src="/js/appSingle.js"></script>
+</body>
+</html>
